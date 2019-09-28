@@ -147,10 +147,23 @@ RocaSec application can be installed using one of the following methods on Linux
 &nbsp;
 ## Usage
 
-1.	To infer sectors of co-evolving sites using RoCA, you need to simply provide 
-      * Multiple sequence alignment (MSA) of the protein in fasta format [mandatory input]; 
-      * A list of known protein biochemical domains in csv/xls format [optional]. If provided, the software computes and displays the association of inferred sectors with the specified biochemical domains. The numbering of the residues in each biochemical domain should match the numbering used in the MSA. For formatting this data properly, see the example files provided in the Data_RoCA folder in this repository.
-      * The number of leading principal components (PCs) to use in the infer-ence of co-evolutionary networks [default: 2];
+1.	To infer sectors of co-evolving sites using RocaSec, you need to simply provide the following data and click “Run RoCA” button in the GUI:
+      * Aligned sequence data in the FASTA format [mandatory].
+      
+        If sequence data is not aligned, the user can use one of the following free alignment programs: (i) Multiple Alignment using Fast Fourier Transform (MAFFT; https://mafft.cbrc.jp/alignment/server/) or (ii) MUltiple Sequence Comparison by Log- Expectation (MUSCLE; https://www.ebi.ac.uk/Tools/msa/muscle/).
+
+      * A list of protein biochemical domains in xls or xlsx format [optional]. 
+        
+        If provided, the software computes and displays the association of inferred sectors with the specified biochemical domains. The xls or xlsx file should be formatted as follows: each column should represent a specified biochemical domain and should include (1) the name of the biochemical domain in the first row (as a text field), and (2) the sites involved in the biochemical domain, given as numerical values in the subsequent rows. See the example files provided in the Data_RoCA folder in this repository.
+        
+      * Maximum number of PCs to use in the inference procedure [default = 6]. 
+      
+        Once the processing is finished, the user can see sectors inferred from different number of PCs using the interactive slider.
+        
+      * 3D protein structure PDB ID (4 digits ID; e.g., 4u5w) [optional]. 
+        
+        If provided, a Pymol compatible “.pml” file is generated at the output, which can be used to visualize the biochemical domains (if provided) and the inferred sectors (for different number of PCs input) on the 3D protein structure. Note that the user has to install Pymol (available at https://pymol.org/) separately.
+
 
 2.	For testing purposes, you can use the data provided in the Data_RoCA folder in this repository. 
 

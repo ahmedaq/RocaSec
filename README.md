@@ -154,7 +154,7 @@ RocaSec application can be installed using one of the following methods on Linux
 
       * A list of protein biochemical domains in xls or xlsx format [optional]. 
         
-        If provided, the software computes and displays the association of inferred sectors with the specified biochemical domains. The xls or xlsx file should be formatted as follows: each column should represent a specified biochemical domain and should include (1) the name of the biochemical domain in the first row (as a text field), and (2) the sites involved in the biochemical domain, given as numerical values in the subsequent rows. See the example files provided in the Data_RoCA folder in this repository.
+        If provided, the software computes and displays the association of inferred sectors with the specified biochemical domains. The xls or xlsx file should be formatted as follows: each column should represent a specified biochemical domain and should include (i) the name of the biochemical domain in the first row (as a text field), and (ii) he sites involved in the biochemical domain, given as numerical values in the subsequent rows. See the example files provided in the Data_RoCA folder in this repository.
         
       * Maximum number of PCs to use in the inference procedure [default = 6]. 
       
@@ -167,17 +167,15 @@ RocaSec application can be installed using one of the following methods on Linux
 
 2.	For testing purposes, you can use the data provided in the Data_RoCA folder in this repository. 
 
-    <b> IMPORTANT: The data to be analyzed must be in the same directory where application is installed, e.g., /Documents/RoCA_dir/applications/. </b> 
-
-3.	RoCA saves the following output files in either csv or xls format (as specified by the user; [default: csv]):
+3.	RocaSec software saves the following output files:
       * Sample PCs used in the inference procedure (xyz_SamplePCs.format, where “xyz” is the name of the fasta file provided as an input and “format” is either csv or xls depending on the option selected in the GUI.)
-      * All eigenvalues of the sample correlation matrix (xyz_Eigenvalues.format)
+      * Eigenvalues of the sample correlation matrix (xyz_Eigenvalues.format)
       * RoCA estimated PCs (xyz_RocaPCs.format)
       * RoCA sectors (xyz_RoCASecs.format)
+      * Pymol compatible “.pml” file (pymol_xyz_secs_numPCs#.pml, where # is the number of PCs used to infer sectors). Note: The user has to install Pymol separately. The structure can be visualized by opening PyMol, clicking File  Run Script, and selecting the generated .pml file. 
+      * Vector graphics (eps format) of all results are also saved in the same directory for generating publication-quality figures.
 
-    Note that the above-mentioned output files are saved by default in the same directory in which the input fasta file is located.
-    
-4. Vector graphics (eps format) of all results are also saved in the same directory for generating publication-quality figures.
+    Note that the above-mentioned output files are saved by default in a new subdirectory named “xyz” within the directory in which the input fasta file is located.
 
 &nbsp;
 ## Acknowledgement

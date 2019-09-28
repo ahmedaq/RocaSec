@@ -16,7 +16,7 @@ RocaSec is a standalone cross-platform package which features an easy-to-use GUI
 
 ![alt text][RocaSecGUI]
 
-[RocaSecGUI]: https://github.com/ahmedaq/RocaSec/blob/master/RocaSec2.png "RocaSec GUI"
+[RocaSecGUI]: https://github.com/ahmedaq/RocaSec/blob/master/fig_ns34a.png "RocaSec GUI"
 
 &nbsp;
 ## Details

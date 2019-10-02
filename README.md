@@ -30,7 +30,7 @@ Ahmed A. Quadeer, David Moarles-Jimenez, and Matthew R. McKay
 A PC with either macOS, Microsoft Windows, or Linux.
 
 &nbsp;
-## Installation procedure
+## Installation
 
 1.  Download the appropriate installer for your operating system from
 https://github.com/ahmedaq/RocaSec. The installer file is named as “RocaSec_x”, where x is the name of the operating system.
@@ -51,7 +51,7 @@ https://github.com/ahmedaq/RocaSec. The installer file is named as “RocaSec_x�
 
     [Important note]: For Linux users, in case the app does not open by the method mentioned above, open terminal and go to the directory where the application is installed and type the following command: 
       ```
-      ./run_RocaSec.sh /"path"/MATLAB_Runtime/v94/
+      ./run_RocaSec.sh /"path"/MATLAB_Runtime/v96/
       ```
       where “path” is the directory in which MATLAB Runtime has been installed. 
 

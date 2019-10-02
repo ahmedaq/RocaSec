@@ -30,119 +30,30 @@ Ahmed A. Quadeer, David Moarles-Jimenez, and Matthew R. McKay
 A PC with either macOS, Microsoft Windows, or Linux.
 
 &nbsp;
-## Installation
-<details>
-  <summary>
-    <b> macOS </b>
-  </summary>  
-&nbsp;
+## Installation procedure
 
-RocaSec can be installed using one of the following methods on macOS:
+1.  Download the appropriate installer for your operating system from
+https://github.com/ahmedaq/RocaSec. The installer file is named as “RocaSec_x”, where x is the name of the operating system.
 
-#### Method 1: Downloading MATLAB Runtime separately and running directly the RoCA app without any installation
+2.  Install it by following the guidelines in the setup window. This will also install MATLAB runtime libraries required to run the app (if not already installed). This procedure may take 10–15 minutes depending on the internet connection.
 
-1. Download and install the Macintosh version of the MATLAB Runtime for R2017b from the following link on the MathWorks website http://ssd.mathworks.com/supportfiles/downloads/R2017b/deployment_files/R2017b/installers/maci64/MCR_R2017b_maci64_installer.dmg. This will install MATLAB Runtime at /Applications/MATLAB/MATLAB_Runtime. Note that the RoCA application will not work with any older or newer version of the MATLAB Runtime.
+    [Important note]: Ignore any instruction that appears in the setup window after the installation is finished.
 
-2. Download this "RocaSec" repository. A folder named "RocaSec-master" will be made on your computer.
+3.	Run the installed app by double clicking “RocaSec” located in the default location: 
 
-3. To run the app, open terminal, go to the newly created folder /RocaSec-master/macos/ directory and type the following command:
-    ```
-    ./run_RocaSec.sh /Applications/MATLAB/MATLAB_Runtime/v93/
-    ```
-This will open the GUI of the RocaSec software.
+    a.	/Applications/RocaSec/application/ in macOS, 
 
+    b.	C:\Program Files\RocaSec\application\ in Microsoft Windows, or
 
-#### Method 2: Using the MATLAB Runtime installer
+    c.	/usr/RocaSec/application in Linux. 
 
-1.	Download the installer "RocaSec_mcr" from http://bit.ly/RocaSec_v1_macOS (size: ~1 GB) and install the application by following the guidelines in the setup window as follows:
-      * Make sure to install RocaSec in any folder other than the “Applications” folder (e.g., you can create a new folder on your Desktop or in Documents folder). In this tutorial, we assume that you made a folder “RoCA_dir” in your “Documents folder”.
-      * Do not change the default installation folder ("Applications") of MATLAB runtime libraries. 
-      * This will install RoCA_gui as well as MATLAB runtime libraries (required to run the app). This procedure may take 2 – 3 minutes on a standard computer.
+    This will open the GUI of the RocaSec software.
 
-2.	To run the app, open terminal, go to the newly created folder /Documents/RoCA_dir/applications/ directory and type the following command:
-    ```
-    ./run_RocaSec.sh /Applications/MATLAB/MATLAB_Runtime/v93/
-    ```
-This will open the GUI of the RocaSec software.
-</details>
-
-<details>
-  <summary>
-    <b> Windows </b>
-  </summary>  
-&nbsp;
-
-RocaSec application can be installed using one of the following methods on Microsoft Windows OS:
-
-#### Method 1: Downloading MATLAB Runtime separately and running directly the RoCA app without any installation
-
-1.	Download and install the Windows version of the MATLAB Runtime for R2018a from the following link on the MathWorks website http://ssd.mathworks.com/supportfiles/downloads/R2018a/deployment_files/R2018a/installers/win64/MCR_R2018a_win64_installer.exe. This will install MATLAB Runtime in the Program Files directory. Note that the RoCA application will not work with any older or newer version of the MATLAB Runtime.
-
-2. Download this "RocaSec" repository. A folder named "RocaSec-master" will be made on your computer.
-
-3. Go to \RocaSec-master\windows\ directory and run the RoCA app by double clicking “RocaSec.exe” in this folder. This will open the GUI of the RoCA software. 
-    
-    Note that antivirus programs, if installed, may block running the software. If this problem arises (noticed for example in the case of Avast and F-secure antivirus), add the program in trusted applications and then run it.
-
-#### Method 2: Using the MATLAB Runtime installer
-
-1.	Download the installer "RocaSec_mcr" from http://bit.ly/RocaSec_v1_win (size: ~1 GB) and install the application by following the guidelines in the setup window as follows:
-      * Make sure to install RocaSec in any folder other than the “Program Files” folder (e.g., you can create a new folder on your Desktop or in Documents folder). In this tutorial, we assume that you made a folder “RoCA_dir” in your “Documents folder”.
-      * Do not change the default installation folder (“Program Files”) of MATLAB runtime libraries. 
-      * This will install RocaSec as well as MATLAB runtime libraries (required to run the app). This procedure may take 2 – 3 minutes on a standard computer.
-
-2.	Run the installed app by double clicking “RocaSec.exe” located in your newly created folder (e.g.,\Documents\RoCA_dir\application\). This will open the GUI of the RocaSec software. 
-    
-    Note that antivirus programs, if installed, may block running the software. If this problem arises (noticed for example in the case of Avast and F-secure antivirus), add the program in trusted applications and then run it.
-
-</details>
-
-<details>
-  <summary>
-    <b> Linux </b>
-  </summary>  
-&nbsp;
-
-RocaSec application can be installed using one of the following methods on Linux OS (tests have been done on CentOS Linux 7, Ubuntu 16.04 LTS and 18.04 LTS):
-
-#### Method 1: Downloading MATLAB Runtime separately and running directly the RoCA app without any installation
-
-1.	Download the Linux version of the MATLAB Runtime for R2018a from the following link on the MathWorks website: http://ssd.mathworks.com/supportfiles/downloads/R2018a/deployment_files/R2018a/installers/glnxa64/MCR_R2018a_glnxa64_installer.zip. 
-
-      Unzip the downloaded zip file in a folder (e.g., MCR_downloaded). Open terminal, go to the directory of the downloaded zip file and type the following commands (admin password on user's computer required): 
+    [Important note]: For Linux users, in case the app does not open by the method mentioned above, open terminal and go to the directory where the application is installed and type the following command: 
       ```
-      sudo chmod +x install
-      ./install
+      ./run_RocaSec.sh /"path"/MATLAB_Runtime/v94/
       ```
-      This will open the MATLAB Runtime setup window. Follow the guidelines in the setup window and install MATLAB Runtime in the directory /Documents/MATLAB_Runtime. Note that the RoCA application will not work with any older or newer version of the MATLAB Runtime.
-
-2. Download this "RocaSec" repository. A folder named "RocaSec-master" will be made on your computer.
-3. Open terminal and go to /RocaSec-master/Linux/ directory and type the following command (admin password on user's computer required): 
-      ```
-      sudo ./run_RocaSec.sh /home/UserName/Documents/MATLAB_Runtime/v94/
-      ```
-      where “UserName” is the name of the directory in which the Documents folder is located. This will open the GUI of the RocaSec software.
-
-#### Method 2: Using the MATLAB Runtime installer
-
-1.	Install the RocaSec application as follows:
-      * Download the installer "RocaSec_mcr.install" from http://bit.ly/RocaSec_v1_linux (size: ~1 GB) to a directory on your computer. Here onwards, we assume that you download it in the "Documents" folder.
-      * Open terminal and go to the "Documents" folder and type the following command (admin password on user's computer required): 
-      ```
-      sudo chmod +x RocaSec_mcr.install
-      ```
-      * Go to the "Documents" folder, double click on the installer file “RocaSec_mcr.install”, and follow the guidelines in the setup window.
-      * Please make sure to install RocaSec in any folder other than the system folders (e.g., you can create a new folder on your Desktop or in Documents folder). In this tutorial, we assume that you made a folder “RoCA_dir” in your “Documents folder”.
-      * Install MATLAB Runtime in the directory /Documents/MATLAB_Runtime/.
-      * This will install RocaSec as well as MATLAB runtime libraries (required to run the app). This procedure may take 2 – 3 minutes on a standard computer.
-
-2.	To run the application, open terminal and go to the directory /Documents/RoCA_dir/application/ and type the following command (admin password on user's computer required): 
-      ```
-      sudo ./run_RocaSec.sh /home/UserName/Documents/MATLAB_Runtime/v94/
-      ```
-      where “UserName” is the name of the directory in which the Documents folder is located. This will open the GUI of the RocaSec software.
-</details>
-
+      where “path” is the directory in which MATLAB Runtime has been installed. 
 
 &nbsp;
 ## Usage

@@ -62,19 +62,23 @@ https://github.com/ahmedaq/RocaSec. The installer file is named as “RocaSec_x�
       * Aligned sequence data in the FASTA format [mandatory].
       
         If sequence data is not aligned, the user can use one of the following free alignment programs: (i) Multiple Alignment using Fast Fourier Transform (MAFFT; https://mafft.cbrc.jp/alignment/server/) or (ii) MUltiple Sequence Comparison by Log- Expectation (MUSCLE; https://www.ebi.ac.uk/Tools/msa/muscle/).
+        
+        Format specifics: Header information (in any format) starting with “>”, following immediately with the sequence in the next line, and one empty line between sequences which acts as a separator. File extension should be either “.fasta”, “.fa”, or “.fas”.
 
       * A list of protein biochemical domains in xls or xlsx format [optional]. 
         
-        If provided, the software computes and displays the association of inferred sectors with the specified biochemical domains. The xls or xlsx file should be formatted as follows: each column should represent a specified biochemical domain and should include (i) the name of the biochemical domain in the first row (as a text field), and (ii) he sites involved in the biochemical domain, given as numerical values in the subsequent rows. See the example files provided in the Data_RoCA folder in this repository.
+        If provided, the software computes and displays the association of inferred sectors with the specified biochemical domains. The numbering of the residues in each biochemical domain should match the numbering used in the MSA.
+        
+        The “xls” or “xlsx” file should be formatted as follows: each column should represent a specified biochemical domain and should include (1) the name of the biochemical domain in the first row (as a text field), and (2) the sites involved in the biochemical domain, given as numerical values in the subsequent rows. Also, see the example files provided in the Data_RoCA folder in this repository. 
+
         
       * Maximum number of PCs to use in the inference procedure [default = 6]. 
       
-        Once the processing is finished, the user can see sectors inferred from different number of PCs using the interactive slider.
+        Once the processing is finished, the user can tune the interactive slider to visualize in real-time the sectors inferred when different number of PCs are provided to the RoCA method. Note that all the outputs (all the inferred sectors and associations) change when the number of PCs is modified.
         
       * 3D protein structure PDB ID (4 digits ID; e.g., 4u5w) [optional]. 
         
-        If provided, a Pymol compatible “.pml” file is generated at the output, which can be used to visualize the biochemical domains (if provided) and the inferred sectors (for different number of PCs input) on the 3D protein structure. Note that the user has to install Pymol (available at https://pymol.org/) separately.
-
+        If a valid PDB ID in the “input information” panel is provided (validity of the PDB ID is checked automatically by querying the protein data bank,  https://www.rcsb.org, and reported in the processing information panel), a script in “.pml” format is generated in the output directory which the user can directly run in PyMol—-a widely-used software for molecular visualization. To inform the user about this generated .pml script, a new window is opened in the GUI with: 1) a link to the PyMol webpage for downloading the PyMol software (available at https://pymol.org/), and 2) brief detail on the simple procedure to run the PyMol script.
 
 2.	For testing purposes, you can use the data provided in the Data_RoCA folder in this repository. 
 

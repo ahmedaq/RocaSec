@@ -63,7 +63,7 @@ https://github.com/ahmedaq/RocaSec. The installer file is named as “RocaSec_x�
       
         If sequence data is not aligned, the user can use one of the following free alignment programs: (i) Multiple Alignment using Fast Fourier Transform (MAFFT; https://mafft.cbrc.jp/alignment/server/) or (ii) MUltiple Sequence Comparison by Log- Expectation (MUSCLE; https://www.ebi.ac.uk/Tools/msa/muscle/).
         
-        Format specifics: Header information (in any format) starting with “>”, following immediately with the sequence in the next line, and one empty line between sequences which acts as a separator. File extension should be either “.fasta”, “.fa”, or “.fas”.
+        Format specifics: Header information (in any format) starting with “>”, following immediately with the sequence in the next line. File extension should be either “.fasta”, “.fa”, or “.fas”.
 
       * A list of protein biochemical domains in xls or xlsx format [optional]. 
         

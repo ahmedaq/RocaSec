@@ -87,6 +87,7 @@ https://github.com/ahmedaq/RocaSec. The installer file is named as “RocaSec_x�
       * Eigenvalues of the sample correlation matrix (xyz_Eigenvalues.format)
       * RoCA estimated PCs (xyz_RocaPCs.format)
       * RoCA sectors (xyz_RoCASecs.format), with each row representing a sector.
+      * Vector graphics (eps format) of all results are also saved in the same directory for generating publication-quality figures.
       * In case the user provides a PDB ID of the protein structure:
       
         -- Alignment of the sequence for which structure is present in the PDB file and the consensus sequence of the MSA (xyz_alignment_pdbseq_Cseq.txt).
@@ -95,8 +96,6 @@ https://github.com/ahmedaq/RocaSec. The installer file is named as “RocaSec_x�
         
         -- Pymol compatible “.pml” file (pymol_xyz_secs_numPCs#.pml, where # is the number of PCs used to infer sectors). Note: The user has to install Pymol separately. The structure can be visualized by opening PyMol, clicking File -> Run Script, and selecting the generated .pml file. 
       
-      * Vector graphics (eps format) of all results are also saved in the same directory for generating publication-quality figures.
-
     Note that the above-mentioned output files are saved by default in a new subdirectory named “xyz” within the directory in which the input fasta file is located.
 
 &nbsp;

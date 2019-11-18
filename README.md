@@ -49,11 +49,14 @@ https://github.com/ahmedaq/RocaSec. The installer file is named as “RocaSec_x�
 
     This will open the GUI of the RocaSec software.
 
-    [Important note]: For Linux users, in case the app does not open by the method mentioned above, open terminal and go to the directory where the application is installed and type the following command: 
+    [Important note]: For Linux users, in case the app does not open by the method mentioned above, open the Terminal and go to the directory where the application is installed and type the following command: 
       ```
       ./run_RocaSec.sh /"path"/MATLAB_Runtime/v96/
       ```
-      where “path” is the directory in which MATLAB Runtime has been installed. 
+      where “path” is the directory in which MATLAB Runtime has been installed. For example, if MATLAB Runtime libraries are installed in the directory /home/UserName/Documents/MATLAB_Runtime/ (where “UserName” is the name of user’s home directory), the code to run the software will be:
+      ```
+      ./run_RocaSec.sh /home/UserName/Documents/MATLAB_Runtime/v96/
+      ```
 
 &nbsp;
 ## Usage

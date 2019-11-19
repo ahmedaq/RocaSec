@@ -81,7 +81,11 @@ https://github.com/ahmedaq/RocaSec. The installer file is named as “RocaSec_x�
         
       * 3D protein structure PDB ID (4 digits ID; e.g., 4u5w) [optional]. 
         
-        If a valid PDB ID in the “input information” panel is provided (validity of the PDB ID is checked automatically by querying the protein data bank,  https://www.rcsb.org, and reported in the processing information panel), a script in “.pml” format is generated in the output directory which the user can directly run in PyMol—-a widely-used software for molecular visualization. To inform the user about this generated .pml script, a new window is opened in the GUI with: 1) a link to the PyMol webpage for downloading the PyMol software (available at https://pymol.org/), and 2) brief detail on the simple procedure to run the PyMol script.
+        If a valid PDB ID in the “input information” panel is provided (validity of the PDB ID is checked automatically by querying the protein data bank,  https://www.rcsb.org, and reported in the processing information panel), a script in “.pml” format is generated in the output directory which the user can directly run in PyMol—-a widely-used software for molecular visualization. The steps involved in mapping the alignment indices to the protein sequence present in the PDB file is as follows:
+
+        First, the sequence (as well as residue numbering) for which the structure is present in the PDB file is extracted, it is then aligned with the consensus sequence of the MSA to generate a mapping from MSA positions to the residue numbering in PDB file (a warning is displayed in the processing information panel if the alignment score—computed using the standard BLOSUM50 scoring matrix—is less than zero), and then this mapping on the inferred sectors is used to generate the PyMol scripts. The alignment of the consensus sequence of the MSA with the sequence in the PDB file as well as the resulting mapping of MSA positions are provided as additional output files when the user provides the PDB ID input. 
+        
+        To inform the user about this generated .pml script, a new window is opened in the GUI with: 1) a link to the PyMol webpage for downloading the PyMol software (available at https://pymol.org/), and 2) brief detail on the simple procedure to run the PyMol script.
 
 2.	For testing purposes, you can use the data provided in the Data_RoCA folder in this repository. 
 

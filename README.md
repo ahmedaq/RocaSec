@@ -9,6 +9,7 @@
 *  [Usage](#usage)
 *  [Acknowledgement](#acknowledgement)
 *  [Troubleshooting](#troubleshooting)
+*  [Citation](#citation)
 
 &nbsp;
 ## Overview
@@ -113,3 +114,21 @@ We would like to thank Neelkanth Kundu, Laureano Moreno Pozas, Muhammad Saqib So
 &nbsp;
 ## Troubleshooting
 For any questions or comments, please email at ahmedaq@gmail.com. 
+
+&nbsp;
+## Citation
+#### Plain text
+A. A. Quadeer, D. Morales-Jimenez, and M. R. McKay, "RocaSec: A standalone GUI-based package for robust co-evolutionary analysis of proteins," accepted in Bioinformatics, 2019.
+#### BibTeX
+@article{Quadeer2019,
+author = {Quadeer, Ahmed A. and Morales-Jimenez, David and McKay, Matthew R.},
+doi = { },
+journal = {Bioinformatics},
+month = {nov},
+number = { },
+pages = { },
+title = {{RocaSec: A standalone GUI-based package for robust co-evolutionary analysis of proteins}},
+url = { },
+volume = { },
+year = {2019}
+}

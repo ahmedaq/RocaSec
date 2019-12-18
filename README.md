@@ -118,7 +118,7 @@ For any questions or comments, please email at ahmedaq@gmail.com.
 &nbsp;
 ## Citation
 #### Plain text
-A. A. Quadeer, D. Morales-Jimenez, and M. R. McKay, "RocaSec: A standalone GUI-based package for robust co-evolutionary analysis of proteins," accepted in Bioinformatics, 2019.
+Ahmed A Quadeer, David Morales-Jimenez, Matthew R McKay, RocaSec: A standalone GUI-based package for robust co-evolutionary analysis of proteins, <i>Bioinformatics<\i>, btz890, https://doi.org/10.1093/bioinformatics/btz890
 #### BibTeX
 @article{Quadeer2019,
 author = {Quadeer, Ahmed A. and Morales-Jimenez, David and McKay, Matthew R.},
